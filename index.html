@@ -1,0 +1,85 @@
+<html lang="en">
+<head>
+    
+    <style>
+    
+    h1 {
+      font-style: bold;
+      text-align: center;
+    }
+    body {
+       font-family: monospace;
+       font-size: large;
+       display: block;
+       padding-left: 33%;
+       padding-right: 33%;
+       margin-left: 20px;
+       margin-right: 20px;
+     }
+    input {
+        display: block;
+    } 
+    label {
+        padding-bottom: 10px;
+    }
+    form {
+        background-color: rgb(219, 55, 164);   
+    }
+
+    input.checkbox {
+        display: inline-block;
+    }
+
+    </style>
+
+
+</head>
+<body>
+
+<h1 id="title"> <strong>Tell me more about new things in life</strong> </h1>
+<p id="description"> 
+    This is a survey where you can explain about your routine likes
+</p>
+    <form id= "survey-form">
+      
+    <label id="name-label"> Name: </label>   
+       <input type="text" name="name" id="name" placeholder= "First Name" required> </input> </br>
+    <label id="email-label"> Email: </label>   
+       <input type="email" name="email" id="email"placeholder= "Best Email" required> </input> </br>
+    <label id="number-label"> Number: </label>   
+       <input type="number" name="number" id="number" min="0" max ="10" placeholder= "Excitement Level"required> </input> </br>
+
+       <select id="dropdown" name="motivation from">
+            <option value="book reading">Book Reading</option>
+            <option value="content writing">Content writing</option>
+            <option value="exercising">Exercising</option>
+            <option value="meditation">Meditation</option> </br>
+      </select>
+
+            <br>
+            <input type="radio" id="male" name="gender" value="male"> 
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label><br>
+            <br>
+
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+            <label for="vehicle1"> I have a bike</label><br>
+            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+            <label for="vehicle2"> I have a car</label><br>
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+            <label for="vehicle3"> I have a jet</label><br>
+
+       <textarea> For Additional Comments, type here :) </textarea> <br>
+    
+       <input id="submit" type="submit"> </input>
+
+    </form>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    </body> 
+
+</html>
+
+
